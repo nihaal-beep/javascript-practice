@@ -1,0 +1,42 @@
+body{
+    padding:0;
+    margin:0;
+    background:linear-gradient(to right,#638cff,#ffd4ff);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Montserrat', cursive;
+    color:black; 
+    height: 90vh;
+    
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    
+}
+.num{
+    font-size: 4rem;
+    text-align: center;
+}
+.disp{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    grid-template-columns: repeat(3,300px);
+    padding:0;
+    margin:0;
+
+}
+.disp>button{
+    cursor: pointer;
+    border:1px solid white;
+    font-size:3rem;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+button:hover{
+    background-color: rgba(255,255,255,.85);
+}
+
