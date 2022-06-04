@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin:0;
+    background:linear-gradient(to right,#638cff,#ffd4ff);
+    font-family: 'Montserrat', cursive;
+
+}
+.submit_btn{
+    border:none;
+    font-size:1.05rem;
+    background-color: #ffd4ff;
+}
+.wrapper{
+    padding:50px;
+    display: grid;
+    border:5px solid black;
+    width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+    margin-left: 0;
+    margin-top: 5%;
+}
+li{
+    margin-top: 5%;
+}
+.todo{
+    padding:5px;
+    border:2px solid slateblue;
+    background-color: #ffd4ff;
+}
+.inpt_element{
+    display: grid;
+    grid-template-columns: 55% 20% 20%; 
+    word-wrap: break-word;
+}   
+
+.inpt_element>button{
+    border:0px;
+    background-color: #ffd4ff;
+    margin-left:0.5rem;
+    font-size: 0.75rem;    
+}
+.task_wrapper{
+    display: grid;
+    grid-template-columns: 90% 5%;
+}
+.num{
+    padding-top:1.5rem;
+}
