@@ -1,0 +1,106 @@
+body{
+    background-color: blueviolet;
+}
+
+main{
+    display:grid;
+    justify-content: center;
+    grid-template-rows: repeat(3,11rem);
+    grid-template-columns: repeat(4,12rem);
+    perspective: 500px;
+    width:fit-content;
+    height: 640px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:5%;
+}
+.card{
+    transform-style: preserve-3d;
+    position: relative;
+    width: 8rem;
+    height: 10rem;
+    border: 1px solid black;
+}
+.back>img{
+    width: 100%;
+    height: 100%;
+}
+.card:hover{
+    cursor:pointer;
+}
+.back:hover{
+    opacity: 0.85;
+}
+
+.back, .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility:hidden;
+    transition: transform 500ms ease-in-out;  
+
+ 
+}
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: black;
+    font-family: sans-serif;
+    background-color: gray;
+    opacity: 0.9;
+  }
+  
+
+  
+  .overlay-text.visible {
+    font-size: 10rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+.back{
+
+    background-color: black;
+    color:white;
+}
+.front{
+    background-color: gray;
+    color:black;
+    transform: rotateY(180deg);
+}
+
+.card.flip .back{
+    
+    transform:rotateY(-180deg);
+}
+.card.flip .front{
+    
+    transform:rotateY(0deg);
+}
+
+.loser{
+    display:none;
+    font-size: 10rem;
+    width: 100%;
+    height: 100%;
+}
+.loser>.score{
+    font-size: 5rem;
+}
+.front>img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin:auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
